@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VR开发平台CDN管理工具</title>
+    <link rel="stylesheet" href="./page_static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./page_static/css/main.css">
+    <link rel="stylesheet" href="./page_static/highlight.js/highlight.css">
+    <script src="./page_static/highlight.js/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+</head>
+<body>
+    <nav class="nav left-nav-bar">
+        <header class="nav-header">
+            <h3 class="nav-title">
+                <strong>VR</strong> Manager
+            </h3>
+            <img src="./page_static/sogou.png" alt="">
+        </header>
+        <div class="nav-item item-dashboard">
+           <h5>
+               <span class="glyphicon glyphicon-dashboard"></span>
+                Dashboard
+            </h5>
+            <button class="nav-button btn-show-log tab-active-dashboard">Show Log</button>
+            <button class="btn-action btn btn-default btn-start-server"><strong>Start</strong> Server</button>
+            <button class="btn-action btn btn-default btn-stop-server"><strong>Stop</strong> Server</button>
+            <button class="btn-action btn btn-default btn-minimize">Minimize</button>
+            <button class="btn-action btn btn-default btn-close">Close</button>
+            <button class="btn-action btn btn-default btn-start-synchronize"><strong>Start</strong> synchronize</button>
+        </div>
+
+        <div class="nav-item item-config">
+            <h5>
+                <span class="glyphicon glyphicon-cog"></span>
+                    Config
+            </h5>
+            <button class="nav-button btn-config-path">Config <strong>Local Path</strong></button>
+            <!-- <button class="nav-button btn-config-server">Config <strong>Server</strong></button> -->
+        </div>
+    </nav>
+    <div class="main-box">
+        <div class="log-tab-box tab-box"><pre><code class="Shell" style="background: transparent">Welcome to use VR Manager O(∩_∩)O</code></pre></div></code></pre>
+        <div class="config-path-tab-box tab-box">
+            <!-- <div class="form-group">
+                <label>名称：<span> * </span>系统名称</label>
+                <div class="row container">
+                    <button class="btn btn-default config-item-name">CDN管理工具</button>
+                </div>
+            </div> -->
+            <div class="form-group">
+                <label>端口：<span> * </span>系统端口</label>
+                <div class="row container">
+                    <!-- <button class="btn btn-default config-item-port"></button> -->
+                    <input type="text" class="form-control config-item-port" value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>工作路径：<span> * </span>工作空间的本地路径</label>
+                <div class="row container">
+                    <button class="btn btn-default config-item-localworkspace"></button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>工作路径SVN：<span> * </span>SVN地址，输入</label>
+                <div class="row container">
+                    <!-- <button class="btn btn-default">http://svn.sogou-inc.com/svn/websearch4/web/web_front/websearch/branches/webapp/pc_vr/2017/liuyipin</button> -->
+                    <input type="text" class="form-control config-item-svn" value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>UED地址：<span> * </span>UED本地路径</label>
+                <div class="row container">
+                    <button class="btn btn-default config-item-ued"></button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>trunk地址：<span> * </span>trunk本地路径</label>
+                <div class="row container">
+                    <button class="btn btn-default config-item-trunk"></button>
+                </div>
+            </div>
+            
+            <button class="btn btn-success btn-confirm-config-path">保存</button>
+            <button class="btn btn-danger btn-cancel-config-path">取消</button>
+        </div>
+        <!-- <div class="config-server-tab-box tab-box"></div> -->
+    </div>
+    <script>
+        require('./rendener.js')
+    </script>
+</body>
+</html>

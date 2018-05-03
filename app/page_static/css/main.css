@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    font-family: "微软雅黑", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.main-box {
+    flex: 1;
+}
+
+/* left nav part start */
+.left-nav-bar {
+    width: 250px;
+    background: rgb(245, 245, 245);
+    border-right: 1px solid rgb(225, 225, 225);
+}
+
+.left-nav-bar .nav-header {
+    position: relative;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.left-nav-bar .nav-title {
+    text-transform: uppercase;
+    font-weight: 200;
+    display: inline-block;
+}
+.left-nav-bar .nav-item {
+    margin: .3em 0;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+
+}
+
+.left-nav-bar .nav-title strong {
+    font-weight: 500px;
+}
+
+.nav-button {
+    display: block;
+    width: 100%;
+    padding: .3rem;
+    padding-left: calc(3rem + 16px + .5rem);
+    line-height: 2;
+    text-align: left;
+    font: inherit;
+    font-size: 15px;
+    color: rgb(115, 115, 115);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-weight: 100;
+}
+
+.nav-button:hover {
+    background: rgb(221, 221, 221);
+}
+
+.tab-active-dashboard {
+    background: rgb(68, 119, 64);
+    color: #fff;
+}
+.tab-active-config {
+    background: rgb(77, 145, 166);
+    color: #fff;
+}
+.tab-active-config:hover {
+    background: rgb(77, 145, 166);
+    color: #fff;
+}
+.tab-active-dashboard:hover {
+    background: rgb(68, 119, 64);
+    color: #fff;
+}
+
+.btn-action {
+    display: block;
+    width: 150px;
+    margin: 5px 50px;
+}
+.nav-item h5 {
+    padding-left: 2rem;
+}
+
+.nav-header img {
+    width: 50px;
+    margin-top: -10px;
+}
+
+/* left nav part end */
+
+/* .log-tab-box {
+    overflow: auto
+} */
+
+.main-box {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    overflow: auto
+}
+.log-tab-box {
+    flex: 1;
+}
+
+.main-box {
+    position: relative;
+}
+.main-box .container {
+    width: 600px;
+}
+.main-box span {
+    color: red;
+}
+.main-box .container button {
+    width: 100%;
+}
+.config-path-tab-box {
+    font-weight: 200;
+    font-size: 12px;
+}
+.main-box .tab-box {
+    /* display: none; */
+    opacity: 0;
+    
+    position: absolute;
+    left: -10px;
+    transition: all .4s ease;
+}
+
+.main-box .active-tab {
+    /* display: block; */
+    opacity: 1;
+    left: 20px;
+    transition: all .4s ease;
+}
+
+.main-box .config-item-port {
+    text-align: center;
+}
